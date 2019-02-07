@@ -7,7 +7,7 @@
     },
     "artifactRepositoryDisplayName": {
       "type": "string",
-      "defaultValue": "Team Repository"
+      "defaultValue": "public repoy"
     },
     "artifactRepoUri": {
       "type": "string",
