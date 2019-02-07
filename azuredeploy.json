@@ -10,23 +10,22 @@
       "defaultValue": "Team Repository"
     },
     "artifactRepoUri": {
-      "type": "string"
+      "type": "string",
+      "defaultvalue": "https://github.com/Azure/azure-devtestlab.git"
     },
     "artifactRepoBranch": {
       "type": "string",
       "defaultValue": "master"
     },
-    "artifactRepoFolder": {
+    "artifactRepoFolder": { 
       "type": "string",
       "defaultValue": "/Artifacts"
     },
     "artifactRepoType": {
       "type": "string",
       "allowedValues": ["GitHub"]
-    },
-    "artifactRepoSecurityToken": {
-      "type": "securestring"
     }
+
   },
   "variables": {
     "labVirtualNetworkName": "[concat('Dtl', parameters('labName'))]",
@@ -59,7 +58,6 @@
             "folderPath": "[parameters('artifactRepoFolder')]",
             "branchRef": "[parameters('artifactRepoBranch')]",
             "displayName": "[parameters('artifactRepositoryDisplayName')]",
-            "securityToken": "[parameters('artifactRepoSecurityToken')]",
             "sourceType": "[parameters('artifactRepoType')]",
             "status": "Disabled"
           }
