@@ -10,9 +10,6 @@
     },
     "artifactRepoType": {
       "value": "GitHub"
-    },
-    "artifactRepoSecurityToken": {
-      "value": "1111111111111111111111111111111111111111111111111111"
     }
   }
 }
