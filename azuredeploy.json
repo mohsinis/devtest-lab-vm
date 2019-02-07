@@ -54,7 +54,7 @@
             "[resourceId('Microsoft.DevTestLab/labs', parameters('labName'))]"
           ],
           "properties": {
-            "uri": "[parameters('artifactRepoUri')]",
+            "uri": "https://github.com/Azure/azure-devtestlab.git",
             "folderPath": "[parameters('artifactRepoFolder')]",
             "branchRef": "[parameters('artifactRepoBranch')]",
             "displayName": "[parameters('artifactRepositoryDisplayName')]",
