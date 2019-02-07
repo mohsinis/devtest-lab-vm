@@ -11,7 +11,7 @@
     },
     "artifactRepoUri": {
       "type": "string",
-      "defaultvalue": "https://github.com/Azure/azure-devtestlab.git"
+      "allowedValues": ["https://github.com/Azure/azure-devtestlab.git"]
     },
     "artifactRepoBranch": {
       "type": "string",
